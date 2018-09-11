@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <title>Ventucon Partners</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style.css">  
+  <!-- Custom Fonts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>$(function () { $('#nav').load('partials/nav.html');});</script>
+</head>
+<body>
+  <div id="screen-change-overlay"></div>
+  <section id="nav">
+
+  </section>
+  <section id="menu-overlay">
+      <div class="menu-content">
+         <div><a onclick="goToSection('home')">Home</a></div>
+         <div><a onclick="goToSection('companies')">Companies</a></div>
+         <div><a onclick="goToSection('team-section')">Team</a></div>
+         <div><a onclick="goToSection('apply-section')">Apply</a></div>
+         <div><a onclick="goToSection('contact-section')">Contact</a></div>
+      </div>
+  </section>
+  
+  <section id="contact-section">
+    <div class="col-sm-12 text-contact-us">Contact Us</div>
+    <div class="col-sm-12"><span class="text-email">info@ventuconpartners.com</span></div>
+    <div class="col-sm-12 phone-no-text">Phone Number</div>
+    <div class="col-sm-12"><span class="text-phone-no-1">+234 809 464 5013</span> <span class="text-phone-no-2">+234 818 595 9859</span></div>
+  </section>
+  
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,120 @@
+@font-face {
+  font-family: 'Graphik';
+  font-weight: normal;
+  src: url("/fonts/graphik/Graphik-Regular.eot");
+  /* IE9 Compat Modes */
+  src: url("/fonts/graphik/Graphik-Regular.eot?#iefix") format("embedded-opentype"), url("/fonts/graphik/Graphik-Regular.woff") format("woff"), url("/fonts/graphik/Graphik-Regular.ttf") format("truetype"), url("/fonts/graphik/Graphik-Regular.svg#Graphik-Regular") format("svg");
+  /* Legacy iOS */
+  text-rendering: optimizeLegibility; }
+@font-face {
+  font-family: 'Graphik';
+  font-weight: 200;
+  src: url("/fonts/graphik/Graphik-Medium.eot");
+  /* IE9 Compat Modes */
+  src: url("/fonts/graphik/Graphik-Medium.eot?#iefix") format("embedded-opentype"), url("/fonts/graphik/Graphik-Medium.woff") format("woff"), url("/fonts/graphik/Graphik-Medium.ttf") format("truetype"), url("/fonts/graphik/Graphik-Medium.svg#Graphik-Medium") format("svg");
+  /* Legacy iOS */
+  text-rendering: optimizeLegibility; }
+@font-face {
+  font-family: 'Product Sans';
+  font-weight: normal;
+  src: url("/fonts/Product Sans Regular.ttf"); }
+@font-face {
+  font-family: 'Product Sans';
+  font-weight: bold;
+  src: url("/fonts/Product Sans Bold.ttf"); }
+@font-face {
+  font-family: 'Museo Sans';
+  font-weight: normal;
+  src: url("/fonts/museo_sans_cyrl_300.ttf"); }
+body {
+  font-family: "Product Sans";
+  font-weight: normal;
+  color: white; }
+
+#team-profiles-section {
+  width: 100%; }
+
+.team-section-short-text {
+  margin-bottom: 50px; }
+
+.team-member-box {
+  width: 25%;
+  height: 400px;
+  float: left;
+  cursor: pointer;
+  filter: grayscale(100%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+  .team-member-box .img-overlay {
+    opacity: 1;
+    background: transparent;
+    transition: 0.8s ease-in-out;
+    width: 100%;
+    height: 100%;
+    padding-top: 200px;
+    color: white;
+    font-family: 'Museo Sans';
+    font-weight: normal; }
+    .team-member-box .img-overlay .team-member-name {
+      text-align: center;
+      font-size: 28px;
+      opacity: 0;
+      transition: 0.8s ease-in-out; }
+    .team-member-box .img-overlay .button-view-profile {
+      width: 36%;
+      height: 40px;
+      margin-left: 32%;
+      background: transparent;
+      margin-top: 20px;
+      transition: 0.8s ease-in-out;
+      border: 1px solid white;
+      text-transform: uppercase;
+      opacity: 0;
+      outline: none; }
+
+.bg-img-charles {
+  background-image: url("/img/Charles Arong.jpg"); }
+
+.bg-img-nini {
+  background-image: url("/img/Niniola Ukaria.jpg"); }
+
+.bg-img-abdul {
+  background-image: url("/img/Abdul Sheidu.jpg"); }
+
+.bg-img-akin {
+  background-image: url("/img/Akin Sanda.jpg"); }
+
+.bg-img-teme {
+  background-image: url("/img/Teme Banigo.jpg"); }
+
+.bg-img-debola {
+  background-image: url("/img/Debola Sheidu.jpeg"); }
+
+.team-member-box:hover .img-overlay {
+  background: rgba(0, 0, 0, 0.5);
+  transition: 0.8s ease-in-out; }
+  .team-member-box:hover .img-overlay .team-member-name {
+    opacity: 1;
+    transition: 0.8s ease-in-out; }
+  .team-member-box:hover .img-overlay .button-view-profile {
+    opacity: 1;
+    transition: 0.8s ease-in-out; }
+
+@media screen and (max-width: 1440px) {
+  .team-member-box {
+    width: 33.33333333%; } }
+@media screen and (max-width: 1280px) {
+  .team-member-box {
+    width: 50%;
+    height: 510px; } }
+@media screen and (max-width: 768px) {
+  .team-member-box {
+    width: 100%;
+    height: 650px; } }
+@media screen and (max-width: 488px) {
+  .team-member-box {
+    width: 100%;
+    height: 350px; } }
+
+/*# sourceMappingURL=team.css.map */

@@ -1,0 +1,364 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <title>Ventucon Partners</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style.css">  
+  <!-- Custom Fonts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+    <!-- <div id="wrapper">    
+        <div id="yourdiv">Your text</div>
+    </div> -->
+  <div id="screen-change-overlay"></div>
+  <section id="nav">
+		<div class="logo" onclick="goToSection('nav-home')"></div>
+		<div class="hamburger-menu" onclick="onMenuClick(this)">
+      <div id="bar1"></div>
+      <div id="bar2"></div>
+      <div id="bar3"></div>
+    </div>
+  </section>
+  <section id="menu-overlay">
+      <div class="menu-content">
+         <div><a onclick="goToSection('home')">Home</a></div>
+         <div><a onclick="goToSection('companies')">Companies</a></div>
+         <div><a onclick="goToSection('team-section')">Team</a></div>
+         <div><a onclick="goToSection('apply-section')">Apply</a></div>
+         <div><a onclick="goToSection('contact-section')">Contact</a></div>
+      </div>
+  </section>
+  
+  <section id="home">
+    <div id="home-bg"></div>
+    <div id="home-bg-overlay"></div>
+    <div class="row home-text">
+      <div class="col-sm-12"> Ventucon Partners</div>
+      <div class="col-sm-6 col-sm-offset-3 home-text-small">We grow with enterpreneurs, play to their strengths and improve their weaknesses.</div>
+    </div>
+    <span id="scroll-arrow" class="scroll-down" onclick="goToSection('portfolio-section')"></span>
+  </section>	
+ 
+  <section id="portfolio-section">
+      <div id="portfolio-1">
+          <div class="hidden-xs hidden-sm">
+              <div class="portfolio-wrapper">
+                  <div class="left-column">
+                    <div class="col-sm-12 portfolio-title">Juice Box</div>
+                    <div class="col-sm-12 portfolio-desc">Juice box is a fruit company founded by Nini for the sole purpose of distributing fresh fruit. His strong asset is a large curated, rupation-driven community of security proffesionals who identifyvulnearabilities.</div>
+                    <div class="col-sm-12 color-apricot">
+                      <a class="story-link color-blue" href="#/portfolio-1-more" onclick="goToSection('portfolio-more-details')">Read their story</a>
+                    </div>
+                    <div class="col-sm-12 portfolio-count color-blue">1 &#8212; 3</div>
+                  </div>
+                  <div class="right-column zoom"></div>
+              </div>
+          </div>
+
+            <div id = "portfolio-mobile-1" class="portfolio-mobile hidden-lg hidden-md">
+              <div class="bg-image"></div>
+              <div class="bg-overlay"></div>
+              <div class="content">
+                  <div class="col-sm-12 title">Juice Box</div>
+                  <div class="col-sm-12 desc">Juice box is a fruit company founded by Nini for the sole purpose of distributing fresh fruit. His strong asset is a large curated.</div>
+                  <div class="col-sm-12 read-more-link">
+                      <a href="#/portfolio-1-more" onclick="goToSection('portfolio-more-details')">Read their story</a>
+                  </div>
+                  <div class="col-sm-12 portfolio-num">1 &#8212; 3</div>
+              </div>
+            </div>
+      </div>
+     
+
+      <div id="portfolio-2">
+          <div class="hidden-xs hidden-sm">
+            <div class="portfolio-wrapper">
+                <div class="left-column">
+                  <div class="col-sm-12 portfolio-title">IKEA</div>
+                  <div class="col-sm-12 portfolio-desc">Ikea is a fruit company founded by Nini for the sole purpose of distributing fresh fruit. His strong asset is a large curated, rupation-driven community of security proffesionals who identifyvulnearabilities.</div>
+                  <div class="col-sm-12 color-apricot">
+                    <a class="story-link color-apricot" href="#/portfolio-2-more" onclick="goToSection('portfolio-more-details')">Read their story</a>
+                  </div>
+                  <div class="col-sm-12 portfolio-count color-apricot">2 &#8212; 3</div>
+                </div>
+                <div class="right-column port-img-2 zoom"></div>
+            </div>
+          </div>
+
+          <div id = "portfolio-mobile-2" class = "portfolio-mobile hidden-lg hidden-md">
+              <div class="bg-image bg-image-2"></div>
+              <div class="bg-overlay bg-overlay-2"></div>
+              <div class="content">
+                  <div class="col-sm-12 title">IKEA</div>
+                  <div class="col-sm-12 desc">Ikea is a fruit company founded by Nini for the sole purpose of distributing fresh fruit. His strong asset is a large curated, rupation-driven community of security proffesionals who identifyvulnearabilities.</div>
+                  <div class="col-sm-12 read-more-link">
+                      <a href="#/portfolio-2-more" onclick="goToSection('portfolio-more-details')">Read their story</a>
+                  </div>
+                  <div class="col-sm-12 portfolio-num">2 &#8212; 3</div>
+              </div>
+          </div>
+          
+      </div>
+
+      <div id="portfolio-3">
+          <div class="hidden-xs hidden-sm">
+              <div class="portfolio-wrapper">
+                  <div class="left-column">
+                    <div class="col-sm-12 portfolio-title">Calinda</div>
+                    <div class="col-sm-12 portfolio-desc">Calinda is a fruit company founded by Nini for the sole purpose of distributing fresh fruit. His strong asset is a large curated, rupation-driven community of security proffesionals.</div>
+                    <div class="col-sm-12 color-apricot">
+                      <a class="story-link color-purple" href="#/portfolio-3-more" onclick="goToSection('portfolio-more-details')">Read their story</a>
+                    </div>
+                    <div class="col-sm-12 portfolio-count color-purple">3 &#8212; 3</div>
+                  </div>
+                  <div class="right-column port-img-3 zoom"></div>
+              </div>
+          </div>
+
+          <div id = "portfolio-mobile-3" class="portfolio-mobile hidden-lg hidden-md">
+              <div class="bg-image bg-image-3"></div>
+              <div class="bg-overlay bg-overlay-3"></div>
+              <div class="content">
+                  <div class="col-sm-12 title">Calinda</div>
+                  <div class="col-sm-12 desc">Calinda is a fruit company founded by Nini for the sole purpose of distributing fresh fruit. His strong asset is a large curated, rupation-driven community of security proffesionals.</div>
+                  <div class="col-sm-12 read-more-link">
+                      <a href="#/portfolio-3-more" onclick="goToSection('portfolio-more-details')">Read their story</a>
+                  </div>
+                  <div class="col-sm-12 portfolio-num">3 &#8212; 3</div>
+              </div>
+          </div>
+          
+      </div>  
+
+      <div id="portfolio-1-more">
+        <div class="col-sm-6 company-name">Juice Box</div>
+        <div class="col-sm-6 col-md-4 little-desc">Development of a web service for searching professional athletes.</div>
+       <div class="col-sm-12 big-image"></div> 
+        <div class="row more-desc-section">
+          <div class="col-sm-6">
+              <div class="col-sm-3 small-highlight-text">about company</div>
+              <div class="col-sm-11 company-desc">Google is a company that organizes the world’s information, and makes it universally accessible and useful. The result is Google Search, the world’s most popular way to find information on the web. The result is Google Search, the world’s most popular way to find information on the web.</div>
+              <div class="col-sm-12 links"><span>website</span> <span>twitter</span> <span>facebook</span></div>
+          </div>
+          <div class="col-sm-6">
+              <div class="col-sm-3 small-highlight-text">about founders</div>
+              <div class="col-sm-11 company-desc">Google’s founders Larry and Sergey sought to organize the world’s information, and make it universally accessible and useful. The result is Google Search, the world’s most popular way to find information on the web.</div>
+          </div>
+        </div>
+      </div>
+
+      <div id="portfolio-2-more">
+          <div class="col-sm-6 company-name">IKEA</div>
+          <div class="col-sm-6 col-md-4 little-desc">Development of a web service for searching professional athletes.</div>
+         <div class="col-sm-12 big-image"></div> 
+         <div class="row more-desc-section">
+            <div class="col-sm-6">
+                <div class="col-sm-3 small-highlight-text">about company</div>
+                <div class="col-sm-11 company-desc">Google is a company that organizes the world’s information, and makes it universally accessible and useful. The result is Google Search, the world’s most popular way to find information on the web. The result is Google Search, the world’s most popular way to find information on the web.</div>
+                <div class="col-sm-12 links"><span>website</span> <span>twitter</span> <span>facebook</span></div>
+            </div>
+            <div class="col-sm-6">
+                <div class="col-sm-3 small-highlight-text">about founders</div>
+                <div class="col-sm-11 company-desc">Google’s founders Larry and Sergey sought to organize the world’s information, and make it universally accessible and useful. The result is Google Search, the world’s most popular way to find information on the web.</div>
+            </div>
+         </div>
+      </div>
+
+      <div id="portfolio-3-more">
+          <div class="col-sm-6 company-name">Calinda</div>
+          <div class="col-sm-6 col-md-4 little-desc">Development of a web service for searching professional athletes.</div>
+         <div class="col-sm-12 big-image"></div> 
+         <div class="row more-desc-section">
+            <div class="col-sm-6">
+                <div class="col-sm-3 small-highlight-text">about company</div>
+                <div class="col-sm-11 company-desc">Google is a company that organizes the world’s information, and makes it universally accessible and useful. The result is Google Search, the world’s most popular way to find information on the web. The result is Google Search, the world’s most popular way to find information on the web.</div>
+                <div class="col-sm-12 links"><span>website</span> <span>twitter</span> <span>facebook</span></div>
+            </div>
+            <div class="col-sm-6">
+                <div class="col-sm-3 small-highlight-text">about founders</div>
+                <div class="col-sm-11 company-desc">Google’s founders Larry and Sergey sought to organize the world’s information, and make it universally accessible and useful. The result is Google Search, the world’s most popular way to find information on the web.</div>
+            </div>
+         </div>
+      </div>
+  </section>	
+
+  <section id="team-section">
+    <div class="row team-section-category">
+      <div class="col-sm-8 col-sm-offset-2">
+        <span class="category" onclick="showSubsection('profile-section')">Early</span>
+        <span class="category" onclick="showSubsection('profile-section-specialist')">Growth</span>
+        <spa class="category" onclick="showSubsection('about-section')">About</span>
+      </div>
+    </div>
+    <div id="profile-section">
+        <div class="row">
+            <div class="col-sm-12 team-section-short-text">We grow with enterpreneurs, play to their strengths and improve their weaknesses.</div>
+          </div>
+          <div class="row">
+            <div class="team-profile col-sm-12">
+                 <div class="col-lg-3 col-sm-6 team-member img-akin">
+                  <div class="row ">
+                    <div class="col-sm-12 image-overlay"></div>
+                    <div class="col-sm-12 member-name">Akin Sanda</div>
+                    <div class="col-xs-6 col-xs-offset-3">
+                      <div class="btn-view-profile col-xs-12" onclick="goToTeamProfile('profile-akin')">View Profile</div>
+                     <!-- <div class="button-email col-xs-6" onclick="openInNewTab('https://twitter.com/jingles1000')"></div> -->
+                     <!-- <div class="button-linkedin col-xs-3"></div> -->
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 team-member img-teme">
+                  <div class="row ">
+                    <div class="col-sm-12 image-overlay"></div>
+                    <div class="col-sm-12 member-name">Teme Banigo</div>
+                    <div class="col-xs-6 col-xs-offset-3">
+                        <div class="btn-view-profile col-xs-12" onclick="goToTeamProfile('profile-teme')">View Profile</div>
+                       <!-- <div class="button-email col-xs-6" onclick="openInNewTab('https://twitter.com/jingles1000')"></div> -->
+                       <!-- <div class="button-linkedin col-xs-3"></div> -->
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 team-member img-abdul">
+                  <div class="row ">
+                    <div class="col-sm-12 image-overlay"></div>
+                    <div class="col-sm-12 member-name">Abdul Sheidu</div>
+                    <div class="col-xs-6 col-xs-offset-3">
+                      <div class="btn-view-profile col-xs-12" onclick="goToTeamProfile('profile-abdul')">View Profile</div>
+                       <!-- <div class="button-email col-xs-6" onclick="openInNewTab('https://twitter.com/jingles1000')"></div> -->
+                       <!-- <div class="button-linkedin col-xs-3"></div> -->
+                      </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 team-member img-nini">
+                  <div class="row ">
+                    <div class="col-sm-12 image-overlay"></div>
+                    <div class="col-sm-12 member-name">Niniola Ukaria</div>
+                    <div class="col-xs-6 col-xs-offset-3">
+                      <div class="btn-view-profile col-xs-12" onclick="goToTeamProfile('profile-nini')">View Profile</div>
+                       <!-- <div class="button-email col-xs-6" onclick="openInNewTab('https://twitter.com/jingles1000')"></div> -->
+                       <!-- <div class="button-linkedin col-xs-3"></div> -->
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+    </div>
+    <div id="profile-section-specialist">
+        <div class="row">
+            <div class="col-sm-12 team-section-short-text">We grow with enterpreneurs, play to their strengths and improve their weaknesses.</div>
+          </div>
+          <div class="row">
+            <div class="team-profile col-sm-12">
+                 <div class="col-lg-3 col-sm-6 team-member img-debola">
+                  <div class="row ">
+                    <div class="col-sm-12 image-overlay"></div>
+                    <div class="col-sm-12 member-name">Debola Sheidu</div>
+                    <!-- <div class="col-xs-4 col-xs-offset-4">
+                     <div class="button-email col-xs-6"></div>
+                     <div class="button-linkedin col-xs-3"></div>
+                    </div> -->
+                    <div class="col-xs-6 col-xs-offset-3">
+                        <div class="btn-view-profile col-xs-12" onclick="goToTeamProfile('profile-debola')">View Profile</div>
+                         <!-- <div class="button-email col-xs-6" onclick="openInNewTab('https://twitter.com/jingles1000')"></div> -->
+                         <!-- <div class="button-linkedin col-xs-3"></div> -->
+                      </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 team-member img-charles">
+                  <div class="row ">
+                    <div class="col-sm-12 image-overlay"></div>
+                    <div class="col-sm-12 member-name">Charles Arong</div>
+                    <div class="col-xs-6 col-xs-offset-3">
+                        <div class="btn-view-profile col-xs-12" onclick="goToTeamProfile('profile-charles')">View Profile</div>
+                         <!-- <div class="button-email col-xs-6" onclick="openInNewTab('https://twitter.com/jingles1000')"></div> -->
+                         <!-- <div class="button-linkedin col-xs-3"></div> -->
+                      </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 team-member img-akin">
+                  <div class="row ">
+                    <div class="col-sm-12 image-overlay"></div>
+                    <div class="col-sm-12 member-name">Akin Sanda</div>
+                    <div class="col-xs-6 col-xs-offset-3">
+                        <div class="btn-view-profile col-xs-12" onclick="goToTeamProfile('profile-akin')">View Profile</div>
+                         <!-- <div class="button-email col-xs-6" onclick="openInNewTab('https://twitter.com/jingles1000')"></div> -->
+                         <!-- <div class="button-linkedin col-xs-3"></div> -->
+                      </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 team-member img-teme">
+                  <div class="row ">
+                    <div class="col-sm-12 image-overlay"></div>
+                    <div class="col-sm-12 member-name">Teme Banigo</div>
+                    <div class="col-xs-6 col-xs-offset-3">
+                        <div class="btn-view-profile col-xs-12" onclick="goToTeamProfile('profile-teme')">View Profile</div>
+                         <!-- <div class="button-email col-xs-6" onclick="openInNewTab('https://twitter.com/jingles1000')"></div> -->
+                         <!-- <div class="button-linkedin col-xs-3"></div> -->
+                      </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+    </div>
+    <div id="about-section" class="row">
+      <div class="col-sm-8 col-sm-offset-2">
+        <div class="paragraph col-sm-12">
+          <div class="col-sm-6 small-highlight-text">about us</div>
+          <div class="col-sm-12 long-text">The resilient, the innovative, the fighters, the creatives, the underdogs, the philosophers, the underestimated, the quiet titans.
+            <br><br>
+            Ventucon partners believe in these type of African founders; these individuals are a rare gem. We partner early-sometimes when it is just a mere idea as we believe that the first decisions have prodigious impact on the success curve.
+            <br><br>
+            Our style isn’t for everyone, we push when we see great promise. Our approach will be liked by some and disliked by others, those who believe in success will see where our system leads.
+            <br><br>
+            Our Team (Partners, Advisors etc) is a mirror image of the kind of African founders we are willing to work with. Founders who have the will to win and create great societal impact while winning. Our team is filled with winners, overachievers and individuals from humble backgrounds; a team filled with the entrepreneurial spirit who know what it means to walk that path.
+            <br><br>
+            We value teamwork, therefore we will be working together with founders and therefore creating Africans entrepreneurs who can stand out for, hard work, humility and innovation. We are a small team with varied strengths, focusing on diverse entrepreneurs who are willing and ready to help each other raise winners.
+            <br><br>
+            We are partners not just investors; partners for the long-term. We are ready to partner with audacious Africans around the world build legendary companies.
+          </div>
+        </div>
+        <!-- <div class="paragraph col-sm-12">
+            <div class="col-sm-6 small-highlight-text">our aim</div>
+            <div class="col-sm-12 long-text">Our Team (Partners, Advisors etc) is a mirror image of the kind of African founders we are willing to work with. Founders who want to win and create great societal impact while winning. Our team is filled with winners,  African Titans, hungry overachievers and humble individuals; a team filled with the entrepreneurial mindset who know what it means to walk that path.</div>
+        </div>
+        <div class="paragraph col-sm-12">
+            <div class="col-sm-6 small-highlight-text">our expectations</div>
+            <div class="col-sm-12 long-text">By this, we believe we can ultimately foster innovative growth across various sectors of the world economy.</div>
+        </div> -->
+      </div>
+    </div>
+  </section>
+
+
+  <section id="apply-section">
+    <div class="col-sm-6 col-sm-offset-3">
+      <div class="col-sm-12 apply-section-big-text">Let's build together</div>
+      <form action="/action_page.php">
+        <input type="text" name="firstname" value="" placeholder="Your first name">
+        <input type="text" name="firstname" value="" placeholder="Your last name">
+        <input type="text" name="firstname" value="" placeholder="Your email address">
+        <input type="text" name="firstname" value="" placeholder="Your phone number">
+        <input type="text" name="firstname" value="" placeholder="Your country">
+        <input type="text" name="firstname" value="" placeholder="Your startup selector">
+        <input type="text" name="firstname" value="" placeholder="Your startup stage">
+        <input type="text" name="firstname" value="" placeholder="Team size">
+        <!-- <input type="text" name="firstname" value=""  class="big-text-box" placeholder="In not more that 350 words, tell us what your startup does and problems it aims to solve"> -->
+        <textarea type="text" placeholder="In not more that 350 words, tell us what your startup does and problems it aims to solve"></textarea>
+        <div class="button-apply">Apply</div>
+      </form>
+    </div>
+  </section>
+
+  <section id="contact-section">
+    <div class="col-sm-12 text-contact-us">Contact Us</div>
+    <div class="col-sm-12"><span class="text-email">info@ventuconpartners.com</span></div>
+    <div class="col-sm-12 phone-no-text">Phone Number</div>
+    <div class="col-sm-12"><span class="text-phone-no-1">+234 809 464 5013</span> <span class="text-phone-no-2">+234 818 595 9859</span></div>
+  </section>
+  
+  <script src="js/main.js"></script>
+</body>
+</html>
